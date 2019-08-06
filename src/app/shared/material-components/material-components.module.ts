@@ -1,0 +1,66 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatToolbarModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatGridListModule,
+  MatSlideToggleModule,
+  MatCardModule,
+  MatMenuModule,
+  MatRadioModule,
+  MatTableModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatNativeDateModule,
+  MatInputModule,
+  MatDialogModule,
+  MatSelectModule,
+  MatSnackBarModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatTooltipModule,
+  MatExpansionModule,
+  MatButtonToggleModule,
+  MatSortModule,
+  MatBottomSheetModule,
+  MatTabsModule
+} from '@angular/material'
+
+
+@NgModule({
+  exports: [
+    MatButtonModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatSlideToggleModule,
+    MatCardModule,
+    MatMenuModule,
+    MatRadioModule,
+    MatTableModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatInputModule,
+    MatDialogModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatTooltipModule,
+    MatExpansionModule,
+    MatButtonToggleModule,
+    MatSortModule,
+    MatBottomSheetModule,
+    MatTabsModule
+  ],
+  declarations: [],
+})
+export class MaterialComponentsModule { }

@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Todo List</span>
+    </mat-toolbar-row>
+  
+    
+  </mat-toolbar>
+
+  <mat-card class="margin_card">
+    <form [formGroup]="toDoItemForm" (ngSubmit)="addClicked()">
+        <mat-form-field class="formFieldClass" appearance="outline">
+          <mat-label>Title</mat-label>
+          <input matInput placeholder="Enter email" formControlName="title">
+          <mat-error *ngIf="toDoItemForm.get('title').hasError('minlength')">
+            Atleast 3 characters are mandatory
+          </mat-error>
+          <mat-error *ngIf="toDoItemForm.get('title').hasError('required')">
+            Mandatory field
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="formFieldClass" appearance="outline">
+            <mat-label>Desciption</mat-label>
+            <input matInput placeholder="Enter description" formControlName="description">
+            <mat-error *ngIf="toDoItemForm.get('description').hasError('minlength')">
+              Atleast 3 characters are mandatory
+            </mat-error>
+            <mat-error *ngIf="toDoItemForm.get('description').hasError('required')">
+              Mandatory field
+            </mat-error>
+          </mat-form-field>
+        <div class="centerButton">
+          <button mat-raised-button color="primary" [disabled]="toDoItemForm.status === 'INVALID'" type="submit">Add</button>
+        </div>
+      </form>
+  </mat-card>
+  <app-added-item></app-added-item>
+<router-outlet></router-outlet>
